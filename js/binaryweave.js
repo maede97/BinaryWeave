@@ -42,7 +42,7 @@ sliderSize.on("input", function(e) {
 	$("addon-size-label").text(sliderSize.val());
 	SIZE = sliderSize.val();
 	drawInput();
-}
+});
 
 sliderColumns.on('input',function(e) {
 	$("#addon-jaquard-label").text(sliderColumns.val());
