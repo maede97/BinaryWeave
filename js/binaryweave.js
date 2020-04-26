@@ -22,6 +22,7 @@
 var input = $("#input-text"); // text input
 var sliderColumns = $("#input-jaquard"); // jaquard columns
 var sliderRapport = $("#input-rapport");
+var sliderSize = $("#input-size");
 
 var countCharacters = 8; // how many bits are used
 
@@ -29,13 +30,19 @@ var currentDisplay;
 
 var canvas;
 
-var SIZE = 15; // SIZE OF A RECT
+var SIZE = 15; // SIZE OF A RECT, initial value
 var MAX_WIDTH=10; // WIDTH OF CANVAS
 
 
 input.on('input', function(e) {
 	drawInput();
 });
+
+sliderSize.on("input", function(e) {
+	$("addon-size-label").text(sliderSize.val());
+	SIZE = sliderSize.val();
+	drawInput();
+}
 
 sliderColumns.on('input',function(e) {
 	$("#addon-jaquard-label").text(sliderColumns.val());
