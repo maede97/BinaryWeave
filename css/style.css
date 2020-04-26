@@ -1,0 +1,13 @@
+canvas {
+	border: 1px solid black;
+}
+
+#current-display {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#current-display p {
+	line-height: 0;
+
+}
