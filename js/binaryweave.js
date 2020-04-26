@@ -39,7 +39,7 @@ input.on('input', function(e) {
 });
 
 sliderSize.on("input", function(e) {
-	$("addon-size-label").text(sliderSize.val());
+	$("#addon-size-label").text(sliderSize.val());
 	SIZE = sliderSize.val();
 	drawInput();
 });
